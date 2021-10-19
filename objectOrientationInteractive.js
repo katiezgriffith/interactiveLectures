@@ -60,7 +60,7 @@ let teams = {
     teamFive: ['shania' , 'deepta']
 }
 
-delete teams.teamsTwo
+delete teams.teamTwo
 
 //for (let team in teams) {
   ///  console.log(team)
@@ -72,12 +72,23 @@ class Dog {
         this.breed = breed
         this.age = age 
     }
+
+    greeting() {
+        console.log( `Hi, my name is ${this.name} and I am an ${this.breed}`)
+    }
 }
 
-let lassie = new Dog ('Lassie', 'Collie', '18')
+let lassie = new Dog ('Lassie', 'Collie', 18)
 
 //console.log(lassie.name)
 
-let beethoven = new Dog ( 'Beethoven', 'St. Bernard', '12')
+let beethoven = new Dog ( 'Beethoven', 'St. Bernard', 12)
 
-console.log(beethoven.breed)
+//console.log(beethoven.breed)
+
+lassie.greeting()
+
+for (key in lassie){
+    console.log(lassie[key])
+}
+
